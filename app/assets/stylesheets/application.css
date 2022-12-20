@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+h1{
+  background-color: rebeccapurple;
+  font-size: larger;
+}
+h1:hover:active{
+  background-color: purple;
+  box-shadow: 0 1px grey;
+  transform: translateY(0.5px);
+}
+.tablestyle th ,td{
+  width: 20%;
+  border:1px solid black;
+
+}
+td:hover{
+  background-color: aqua;
+  color:chocolate;
+  border:1px solid orange;
+  transition: background-color .8s;
+}
+td:active {
+  background-color: skyblue;
+  box-shadow: 0 1px grey;
+  transform: translateY(0.5px);
+}
