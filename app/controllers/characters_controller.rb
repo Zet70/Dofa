@@ -10,6 +10,13 @@ class CharactersController < ApplicationController
 
   def create
     @datos = params
+    hola = Character.new(character_params)
+    hola.save
+  end
+
+  private
+  def character_params 
+    params.permit(:name,:lvl,:characteristic,:exp)
   end
 
 
