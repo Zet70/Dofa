@@ -16,7 +16,7 @@ class CharactersController < ApplicationController
 
   private
   def character_params 
-    params.permit(:name,:lvl,:characteristic,:exp)
+    params.permit(:name,:lvl,:characteristic,:exp, :color)
   end
 
 
