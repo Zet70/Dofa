@@ -14,10 +14,13 @@ class CharactersController < ApplicationController
     hola.save
   end
 
-  private
-  def character_params 
-    params.permit(:name,:lvl,:characteristic,:exp, :color)
+  def show
+    id = params[:id]
+    @character = Character.find(id)
   end
 
-
+  private
+  def character_params 
+    params.permit(:id,:name,:lvl,:characteristic,:exp, :color)
+  end
 end

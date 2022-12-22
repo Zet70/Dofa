@@ -1,21 +1,25 @@
 <h1>Table :v</h1>
 <table class="tablestyle">
   <tr>
+    <th>ID</th>
     <th>Name</th>
     <th>Lvl</th>
     <th>Characteristic</th>                     
     <th>Exp</th>
     <th>Color</th>
+    <th>Link</th>
   </tr>
 
  
   <% @all_character.each do |item| %>
     <tr> 
+      <td><%=item.id%></td> 
       <td><%=item.name%></td> 
       <td><%=item.lvl%></td> 
       <td><%=item.characteristic%></td> 
       <td><%=item.exp%></td>
       <td><%=item.color%></td>
+      <td><a href="characters/<%=item.id%>">link</a> </td>  
    </tr> 
   <% end %> 
 </table>
