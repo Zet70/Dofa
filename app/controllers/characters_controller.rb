@@ -1,9 +1,6 @@
 class CharactersController < ApplicationController
   def index
-    @first_character = Character.first # Character.new(datos...)
-    @second_character = Character.second # Character.new(datos...)
-    @third_character = Character.third # Character.new(datos...)
-
+    @all_character = Character.all # Character.new(datos...)
   end
 
 

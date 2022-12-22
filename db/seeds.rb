@@ -20,3 +20,22 @@ Character.transaction do
 ])
 end
 
+puts "Rubisito"
+numbers = [1,2,3,4,5]
+people = [
+  { name: "We", age: 2},
+  { name: "Juan", age: 2},
+  { name: "Carlos", age: 3},
+  { name: "Bodoque", age: 4},
+]
+
+# numbers.each do |x| 
+#   puts x 
+# end
+people.each do|people| 
+  puts people[:name]   # {name: "we" , age: 2}people:name
+end
+
+# hashito = { cosa: 1, mongo: "jjj", mmko: true }
+# x = hashito[:cosa] # hashito.[](:cosa)
+# puts x
