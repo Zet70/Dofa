@@ -1,21 +1,19 @@
-
-
- <h1>Table :v</h1>
+<h1>Table :v</h1>
 <table class="tablestyle">
- <tr>
+  <tr>
+    <th>Name</th>
+    <th>Lvl</th>
+    <th>Characteristic</th>                     
+    <th>Exp</th>
+  </tr>
 
-  <th>Name</th>
-  <th>Lvl</th>
-  <th>Characteristic</th>                     
-  <th>Exp</th>
-  
- </tr>
-
- <tr>
-    <td><%=@all_character.name%></td>
-    <td><%=@all_character.lvl%></td>
-    <td><%=@all_character.characteristic%></td>
-    <td><%=@all_character.exp%></td>
- </tr>
-
- </table>
+ 
+  <% @all_character.each do |item| %>
+    <tr> 
+      <td><%=item.name%></td> 
+      <td><%=item.lvl%></td> 
+      <td><%=item.characteristic%></td> 
+      <td><%=item.exp%></td>
+   </tr> 
+  <% end %> 
+</table>
