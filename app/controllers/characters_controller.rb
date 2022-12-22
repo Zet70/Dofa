@@ -1,5 +1,6 @@
 class CharactersController < ApplicationController
-  def index 
+  def index
+    @first_character = Character.first # Character.new(datos...)
     
   end
 
